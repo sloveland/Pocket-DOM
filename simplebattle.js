@@ -68,14 +68,17 @@
     damage = power - second.defense + 2;
     second.takeDamage(damage);
     console.log('...It dealt ' + damage + ' damage!');
+    console.log('...' + second.name + ' has ' + second.hp + ' health remaining.');
 
     if (checkFainted(second)) {
       console.log(second.name + " fainted!");
       endBattle();
+      return;
     }
     if (checkFainted(first)) {
       console.log(first.name + " fainted!");
       endBattle();
+      return;
     }
 
     // Second Attack
@@ -86,14 +89,17 @@
     damage = power - first.defense + 2;
     first.takeDamage(damage);
     console.log('...It dealt ' + damage + ' damage!');
+    console.log('...' + first.name + ' has ' + first.hp + ' health remaining.');
 
     if (checkFainted(first)) {
       console.log(first.name + " fainted!");
       endBattle();
+      return;
     }
     if (checkFainted(second)) {
       console.log(second.name + " fainted!");
       endBattle();
+      return;
     }
 
   }
