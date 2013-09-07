@@ -1,1 +1,145 @@
-/*jslint browser:true */"use strict";function endBattle(){console.log("The battle ended.");document.getElementById("attack").disabled=!0}function getRandom(e,t){return Math.floor(Math.random()*(t-e+1))+e}function rollInitiative(e,t){var n=e.speed+getRandom(1,20),r=t.speed+getRandom(1,20);return n>r?e:t}function checkFainted(e){return e.hp<=0?!0:!1}function battleRound(){var e=rollInitiative(bulbasaur1,charmander1),t,n="",r,i;e===bulbasaur1?t=charmander1:t=bulbasaur1;console.log(e.name+" used Tackle!");r=getRandom(1,4)+e.attack;i=r-t.defense+2;t.takeDamage(i);console.log("...It dealt "+i+" damage!");console.log("..."+t.name+" has "+t.hp+" health remaining.");if(checkFainted(t)){console.log(t.name+" fainted!");endBattle();return}if(checkFainted(e)){console.log(e.name+" fainted!");endBattle();return}console.log(t.name+" used Tackle!");r=getRandom(1,4)+t.attack;i=r-e.defense+2;e.takeDamage(i);console.log("...It dealt "+i+" damage!");console.log("..."+e.name+" has "+e.hp+" health remaining.");if(checkFainted(e)){console.log(e.name+" fainted!");endBattle();return}if(checkFainted(t)){console.log(t.name+" fainted!");endBattle();return}}var Pokemon=function(t,n,r,i,s,o){this.name=t;this.lvl=n;this.hp=r;this.attack=i;this.defense=s;this.speed=o;this.takeDamage=function(e){this.hp=this.hp-e}},charmander1=new Pokemon("Charmander",5,20,11,10,13),bulbasaur1=new Pokemon("Bulbasaur",5,21,11,11,11);document.getElementById("attack").onclick=function(){battleRound()};"use strict";"use strict";var charmander1=new Pokemon("Charmander",5,20,11,10,13),bulbasaur1=new Pokemon("Bulbasaur",5,21,11,11,11);document.getElementById("attack").onclick=function(){battleRound()};
+/*jslint browser:true */
+
+  // Pokemon object constructor
+  var Pokemon = function Pokemon(name, lvl, hp, attack, defense, speed) {
+    this.name = name;
+    this.lvl = lvl;
+    this.hp = hp;
+    this.attack = attack;
+    this.defense = defense;
+    this.speed = speed;
+    this.takeDamage = function (damage) {
+      this.hp = this.hp - damage;
+    };
+  };
+
+
+/* **********************************************
+     Begin lib.js
+********************************************** */
+
+/*jslint browser:true */
+
+  function endBattle() {
+    console.log("The battle ended.");
+    document.getElementById('attack').disabled = true;
+  }
+
+  // Returns random integer
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Rolls dice, adds speed, calculates winner
+  function rollInitiative(player, npc) {
+    var playerInit = player.speed + getRandom(1, 20),
+      npcInit = npc.speed + getRandom(1, 20);
+    // console.log('Player Init: ' + playerInit);
+    if (playerInit > npcInit) {
+      return player;
+    }
+    return npc;
+  }
+
+  function checkFainted(pokemon) {
+    if (pokemon.hp <= 0) {
+      return true;
+    }
+    return false;
+  }
+
+  // 
+  function battleRound() {
+    var first = rollInitiative(bulbasaur1, charmander1);
+    var second;
+    var output = "";
+    var power, damage;
+
+    // Assign second initiative
+    if (first === bulbasaur1) {
+      second = charmander1;
+    } else {
+      second = bulbasaur1;
+    }
+
+    // First Attack
+
+    console.log(first.name + ' used Tackle!');
+
+    power = getRandom(1, 4) + first.attack;
+    damage = power - second.defense + 2;
+    second.takeDamage(damage);
+    console.log('...It dealt ' + damage + ' damage!');
+    console.log('...' + second.name + ' has ' + second.hp + ' health remaining.');
+
+    if (checkFainted(second)) {
+      console.log(second.name + " fainted!");
+      endBattle();
+      return;
+    }
+    if (checkFainted(first)) {
+      console.log(first.name + " fainted!");
+      endBattle();
+      return;
+    }
+
+    // Second Attack
+
+    console.log(second.name + ' used Tackle!');
+
+    power = getRandom(1, 4) + second.attack;
+    damage = power - first.defense + 2;
+    first.takeDamage(damage);
+    console.log('...It dealt ' + damage + ' damage!');
+    console.log('...' + first.name + ' has ' + first.hp + ' health remaining.');
+
+    if (checkFainted(first)) {
+      console.log(first.name + " fainted!");
+      endBattle();
+      return;
+    }
+    if (checkFainted(second)) {
+      console.log(second.name + " fainted!");
+      endBattle();
+      return;
+    }
+
+  }
+
+/* **********************************************
+     Begin canvas.js
+********************************************** */
+
+var canvas = document.getElementById("easel"),
+	stage = new createjs.Stage(canvas),
+	centerX = canvas.width/2,
+	centerY = canvas.height/2;
+	
+	var ship = new createjs.Bitmap("_assets/images/pokemon_logo.svg");
+	ship.x = centerX;
+	ship.y = centerY;
+	ship.regX = 310;
+	ship.regY = 400;
+	
+	stage.addChild(ship);
+
+	createjs.Ticker.setFPS(30);
+	createjs.Ticker.addListener(function() {
+		// ship.rotation += 5;
+		stage.update();
+	});
+
+/* **********************************************
+     Begin controller.js
+********************************************** */
+
+/*jslint browser:true */
+
+var charmander1 = new Pokemon("Charmander", 5, 20, 11, 10, 13);
+var bulbasaur1 = new Pokemon("Bulbasaur", 5, 21, 11, 11, 11);
+
+document.onload = function () {
+	initCanvas();
+};
+
+

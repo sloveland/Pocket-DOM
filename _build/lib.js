@@ -1,7 +1,5 @@
 /*jslint browser:true */
 
-  "use strict";
-
   function endBattle() {
     console.log("The battle ended.");
     document.getElementById('attack').disabled = true;

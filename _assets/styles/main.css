@@ -41,6 +41,60 @@ body {
   @media screen and (min-width: 440px) {
     body {
       font-size: 40px; } }
+  @media screen and (min-width: 460px) {
+    body {
+      font-size: 42px; } }
+  @media screen and (min-width: 480px) {
+    body {
+      font-size: 44px; } }
+  @media screen and (min-width: 500px) {
+    body {
+      font-size: 46px; } }
+  @media screen and (min-width: 520px) {
+    body {
+      font-size: 48px; } }
+  @media screen and (min-width: 540px) {
+    body {
+      font-size: 50px; } }
+  @media screen and (min-width: 560px) {
+    body {
+      font-size: 42px; } }
+  @media screen and (min-width: 580px) {
+    body {
+      font-size: 44px; } }
+  @media screen and (min-width: 600px) {
+    body {
+      font-size: 46px; } }
+  @media screen and (min-width: 620px) {
+    body {
+      font-size: 48px; } }
+  @media screen and (min-width: 640px) {
+    body {
+      font-size: 50px; } }
+  @media screen and (min-width: 660px) {
+    body {
+      font-size: 52px; } }
+  @media screen and (min-width: 680px) {
+    body {
+      font-size: 54px; } }
+  @media screen and (min-width: 700px) {
+    body {
+      font-size: 56px; } }
+  @media screen and (min-width: 720px) {
+    body {
+      font-size: 58px; } }
+  @media screen and (min-width: 740px) {
+    body {
+      font-size: 60px; } }
+  @media screen and (min-width: 760px) {
+    body {
+      font-size: 62px; } }
+  @media screen and (min-width: 780px) {
+    body {
+      font-size: 64px; } }
+  @media screen and (min-width: 800px) {
+    body {
+      font-size: 66px; } }
 
 .system {
   float: left;
@@ -153,7 +207,7 @@ body {
   width: 1.8em;
   height: .5em;
   border-radius: .4em;
-  float: left;
+  float: right;
   margin: .25em;
   border-top: 0.05em solid #8c959d;
   border-bottom: 0.05em solid #5a6269; }

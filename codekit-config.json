@@ -23,15 +23,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/_build\/battle.js" : {
+    "\/_assets\/scripts\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/battle.js",
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_build\/battle-ck.js",
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min-ck.js",
       "fileType" : 64
     },
     "\/_build\/canvas.js" : {
@@ -41,7 +41,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_build\/canvas.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/canvas-ck.js",
       "fileType" : 64
     },
@@ -56,15 +56,15 @@
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main-ck.js",
       "fileType" : 64
     },
-    "\/_assets\/scripts\/jquery.min.js" : {
+    "\/_build\/pokemon.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min.js",
+      "inputAbbreviatedPath" : "\/_build\/pokemon.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min-ck.js",
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
       "fileType" : 64
     },
     "\/_assets\/scripts\/createjs.min.js" : {
@@ -74,7 +74,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
       "fileType" : 64
     },
@@ -87,25 +87,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_build\/pokemon.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/pokemon.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
-      "fileType" : 64
-    },
     "\/_build\/controller.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/_build\/controller.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
       "fileType" : 64
     },
@@ -116,7 +105,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_build\/lib.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/lib-ck.js",
       "fileType" : 64
     }
@@ -137,7 +126,7 @@
       "followForSyntaxChecking" : 1
     },
     {
-      "type" : 1,
+      "type" : 0,
       "position" : 2,
       "linkedFileAbbreviatedPath" : "\/_build\/canvas.js",
       "baseFileAbbreviatedPath" : "\/_build\/controller.js",
