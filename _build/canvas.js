@@ -3,16 +3,16 @@ var canvas = document.getElementById("easel"),
 	centerX = canvas.width/2,
 	centerY = canvas.height/2;
 	
-	var ship = new createjs.Bitmap("_assets/images/pokemon_logo.svg");
-	ship.x = centerX;
-	ship.y = centerY;
-	ship.regX = 310;
-	ship.regY = 400;
+	var logo = new createjs.Bitmap("_assets/images/pokemon_logo.svg");
+	logo.x = centerX;
+	logo.y = centerY;
+	logo.regX = 320;
+	logo.regY = 280;
 	
-	stage.addChild(ship);
+	stage.addChild(logo);
 
 	createjs.Ticker.setFPS(30);
 	createjs.Ticker.addListener(function() {
-		// ship.rotation += 5;
+		// logo.rotation += 5;
 		stage.update();
 	});
