@@ -85,7 +85,7 @@ body {
 	box-shadow: 0 0 3px 1px #555;
 	color: $label;
 	text-align: center;
-	&:hover {
+	&:hover, &:active {
 		box-shadow: 0 0 5px 1px #333;
 	}
 	.label {
@@ -115,7 +115,7 @@ body {
 	position: absolute;
 	border-top: .05em solid lighten($d-pad, 40%);
 	border-bottom: .05em solid darken($d-pad, 20%);
-	&:hover {
+	&:hover, &:active {
 		background: lighten($d-pad, 15%);
 	}
 }
@@ -171,7 +171,7 @@ body {
 	margin: .25em;
 	border-top: .05em solid lighten($control-buttons, 40%);
 	border-bottom: .05em solid darken($control-buttons, 20%);
-	&:hover {
+	&:hover, &:active {
 		background: lighten($control-buttons, 5%);
 	}
 	.label {
@@ -196,7 +196,7 @@ body {
 	margin: .25em;
 	border-top: .05em solid lighten($meta-buttons, 10%);
 	border-bottom: .05em solid darken($meta-buttons, 10%);
-	&:hover {
+	&:hover, &:active {
 		background: lighten($meta-buttons, 5%);
 	}
 	.label {

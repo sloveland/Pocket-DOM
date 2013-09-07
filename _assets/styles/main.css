@@ -64,7 +64,7 @@ body {
   box-shadow: 0 0 3px 1px #555;
   color: #474881;
   text-align: center; }
-  .button:hover {
+  .button:hover, .button:active {
     box-shadow: 0 0 5px 1px #333; }
   .button .label {
     font-size: .4em;
@@ -90,7 +90,7 @@ body {
   position: absolute;
   border-top: 0.05em solid #7b9191;
   border-bottom: 0.05em solid black; }
-  .d:hover {
+  .d:hover, .d:active {
     background: #404d4d; }
 
 .up {
@@ -139,7 +139,7 @@ body {
   margin: .25em;
   border-top: 0.05em solid #de88c1;
   border-bottom: 0.05em solid #290b1f; }
-  .control:hover {
+  .control:hover, .control:active {
     background: #8d266a; }
   .control .label {
     bottom: -3em; }
@@ -160,7 +160,7 @@ body {
   margin: .25em;
   border-top: 0.05em solid #8c959d;
   border-bottom: 0.05em solid #5a6269; }
-  .meta:hover {
+  .meta:hover, .meta:active {
     background: #7e8891; }
   .meta .label {
     bottom: -.6em; }
