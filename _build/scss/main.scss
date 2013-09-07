@@ -75,6 +75,9 @@ body {
 	box-shadow: 0 0 3px 1px #555;
 	color: $label;
 	text-align: center;
+	&:hover {
+		box-shadow: 0 0 5px 1px #333;
+	}
 	.label {
 		font-size: .4em;
 		position: relative;
@@ -155,6 +158,9 @@ body {
 	margin: .25em;
 	border-top: .05em solid lighten($control-buttons, 40%);
 	border-bottom: .05em solid darken($control-buttons, 20%);
+	&:hover {
+		background: lighten($control-buttons, 5%);
+	}
 	.label {
 		bottom: -3em;
 	}
