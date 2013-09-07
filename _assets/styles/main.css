@@ -44,7 +44,8 @@ body {
 
 .system {
   float: left;
-  padding: 1em; }
+  padding: 1em;
+  padding-bottom: 4em; }
 
 .screen-border {
   background: #636c7b;
@@ -164,3 +165,8 @@ body {
     background: #7e8891; }
   .meta .label {
     bottom: -.6em; }
+
+.message {
+  font-size: .5em;
+  color: #474881;
+  font-style: italic; }

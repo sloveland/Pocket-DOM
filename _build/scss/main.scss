@@ -65,6 +65,7 @@ body {
 .system {
 	float: left;
 	padding: 1em;
+	padding-bottom: 4em;
 }
 .screen-border {
 	background: $screen-border;
@@ -202,4 +203,9 @@ body {
 	.label {
 		bottom: -.6em;
 	}
+}
+.message {
+	font-size: .5em;
+	color: $label;
+	font-style: italic;
 }
