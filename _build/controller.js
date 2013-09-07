@@ -1,10 +1,11 @@
 /*jslint browser:true */
 
 // Game Namespace
-var Game = Game || {};
-Game.screen = Game.screen || {};
-Game.controls = Game.controls || {};
-Game.scene = Game.scene || {};
+var Game = Game || {
+	screen: {},
+	controls: {},
+	scene: {}
+}
 
 // Game Controls
 Game.controls.choose = function() {
@@ -34,10 +35,63 @@ Game.controls.left = function() {
 
 
 document.body.onload = function () {
-	console.log(Game);
+	connectButtons();
 };
 
+// GUI Controls
+function connectButtons () {
+	// Control A
+	var controlA = document.getElementById('control-a');
+	controlA.addEventListener('click', function(event) {
+		Game.controls.choose();
+	}, false);
 
+	// Control B
+	var controlB = document.getElementById('control-b');
+	controlB.addEventListener('click', function(event) {
+		Game.controls.cancel();
+	}, false);
+
+	// Meta Start
+	var metaStart = document.getElementById('meta-start');
+	metaStart.addEventListener('click', function(event) {
+		Game.controls.start();
+	}, false);
+
+	// Meta Select
+	var metaSelect = document.getElementById('meta-select');
+	metaSelect.addEventListener('click', function(event) {
+		Game.controls.select();
+	}, false);
+
+	// D-Up
+	var dUp = document.getElementById('d-up');
+	dUp.addEventListener('click', function(event) {
+		Game.controls.up();
+	}, false);
+
+	// D-Right
+	var dRight = document.getElementById('d-right');
+	dRight.addEventListener('click', function(event) {
+		Game.controls.right();
+	}, false);
+
+	// D-Down
+	var dDown = document.getElementById('d-down');
+	dDown.addEventListener('click', function(event) {
+		Game.controls.down();
+	}, false);
+
+	// D-Left
+	var dLeft = document.getElementById('d-left');
+	dLeft.addEventListener('click', function(event) {
+		Game.controls.left();
+	}, false);
+
+	return true;
+}
+
+// Keyboard Controls
 window.addEventListener('keydown', function(event) {
 	switch (event.keyCode) {
 		// Choose

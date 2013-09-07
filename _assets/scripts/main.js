@@ -265,59 +265,17 @@ d=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u20
 
 
 /* **********************************************
-     Begin canvas.js
-********************************************** */
-
-function initCanvas() {
-	console.log("initCanvas() called");
-	var canvas = document.getElementById("easel"),
-	stage = new createjs.Stage(canvas),
-	centerX = canvas.width/2,
-	centerY = canvas.height/2;
-
-	var background = new createjs.Shape();
-	background.graphics.beginFill("#000000").drawRect(0,0, canvas.width, canvas.height);
-
-	var logo = new createjs.Bitmap("_assets/images/pokemon_logo.png");
-	logo.x = centerX;
-	logo.y = centerY;
-	logo.regX = 320;
-	logo.regY = 280;
-	logo.alpha = 0.001;
-
-	createjs.Sound.registerSound("_assets/music/intro.mp3", "intro");
-	createjs.Sound.addEventListener("loadComplete", soundLoaded);
-
-	stage.addChild(background);
-	stage.addChild(logo);
-	var logoFade = false;
-}
-
-
-
-
-
-function soundLoaded(event) {
-	createjs.Sound.play("intro");
-	createjs.Tween.get(logo).wait(2000).to({alpha:1}, 5000);
-	createjs.Tween.get(background).wait(7000).to({alpha: 0}, 5000);
-	createjs.Ticker.setFPS(30);
-	createjs.Ticker.addListener(function() {
-		stage.update();
-	});
-}
-
-/* **********************************************
      Begin controller.js
 ********************************************** */
 
 /*jslint browser:true */
 
 // Game Namespace
-var Game = Game || {};
-Game.screen = Game.screen || {};
-Game.controls = Game.controls || {};
-Game.scene = Game.scene || {};
+var Game = Game || {
+	screen: {},
+	controls: {},
+	scene: {}
+}
 
 // Game Controls
 Game.controls.choose = function() {
@@ -347,10 +305,63 @@ Game.controls.left = function() {
 
 
 document.body.onload = function () {
-	console.log(Game);
+	connectButtons();
 };
 
+// GUI Controls
+function connectButtons () {
+	// Control A
+	var controlA = document.getElementById('control-a');
+	controlA.addEventListener('click', function(event) {
+		Game.controls.choose();
+	}, false);
 
+	// Control B
+	var controlB = document.getElementById('control-b');
+	controlB.addEventListener('click', function(event) {
+		Game.controls.cancel();
+	}, false);
+
+	// Meta Start
+	var metaStart = document.getElementById('meta-start');
+	metaStart.addEventListener('click', function(event) {
+		Game.controls.start();
+	}, false);
+
+	// Meta Select
+	var metaSelect = document.getElementById('meta-select');
+	metaSelect.addEventListener('click', function(event) {
+		Game.controls.select();
+	}, false);
+
+	// D-Up
+	var dUp = document.getElementById('d-up');
+	dUp.addEventListener('click', function(event) {
+		Game.controls.up();
+	}, false);
+
+	// D-Right
+	var dRight = document.getElementById('d-right');
+	dRight.addEventListener('click', function(event) {
+		Game.controls.right();
+	}, false);
+
+	// D-Down
+	var dDown = document.getElementById('d-down');
+	dDown.addEventListener('click', function(event) {
+		Game.controls.down();
+	}, false);
+
+	// D-Left
+	var dLeft = document.getElementById('d-left');
+	dLeft.addEventListener('click', function(event) {
+		Game.controls.left();
+	}, false);
+
+	return true;
+}
+
+// Keyboard Controls
 window.addEventListener('keydown', function(event) {
 	switch (event.keyCode) {
 		// Choose

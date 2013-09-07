@@ -170,3 +170,6 @@ body {
   font-size: .5em;
   color: #474881;
   font-style: italic; }
+
+.control-key {
+  font-size: .4em; }
