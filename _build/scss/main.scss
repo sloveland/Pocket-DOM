@@ -159,6 +159,9 @@ body {
 	position: absolute;
 	border-top: .05em solid lighten($d-pad, 40%);
 	border-bottom: .05em solid darken($d-pad, 20%);
+	&:hover {
+		background: lighten($d-pad, 15%);
+	}
 }
 
 .up {
@@ -237,6 +240,9 @@ body {
 	margin: .25em;
 	border-top: .05em solid lighten($meta-buttons, 10%);
 	border-bottom: .05em solid darken($meta-buttons, 10%);
+	&:hover {
+		background: lighten($meta-buttons, 5%);
+	}
 	.label {
 		bottom: -.6em;
 	}
