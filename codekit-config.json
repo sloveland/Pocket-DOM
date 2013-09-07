@@ -2,15 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8322",
   "files" : {
-    "\/_build\/battle.js" : {
+    "\/_assets\/scripts\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/battle.js",
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_build\/battle-ck.js",
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/jquery.min-ck.js",
       "fileType" : 64
     },
     "\/_build\/canvas.js" : {
@@ -24,15 +24,26 @@
       "outputAbbreviatedPath" : "\/_build\/canvas-ck.js",
       "fileType" : 64
     },
-    "\/_build\/pokemon.js" : {
+    "\/_assets\/scripts\/main.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/pokemon.js",
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main-ck.js",
+      "fileType" : 64
+    },
+    "\/_build\/battle.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/battle.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_build\/battle-ck.js",
       "fileType" : 64
     },
     "\/index.html" : {
@@ -44,6 +55,28 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_assets\/scripts\/createjs.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
+      "fileType" : 64
+    },
+    "\/_build\/pokemon.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/pokemon.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
+      "fileType" : 64
+    },
     "\/_build\/controller.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -53,17 +86,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
-      "fileType" : 64
-    },
-    "\/_assets\/scripts\/createjs-min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs-min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs-min-ck.js",
       "fileType" : 64
     },
     "\/_build\/lib.js" : {
