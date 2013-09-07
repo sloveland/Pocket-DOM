@@ -3,19 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pokemon Simulator</title>
-	
+	<link rel="stylesheet" href="_assets/styles/main.css">
 	
 </head>
 <body>
-	<h1>Pokemon Battle!</h1>
-	<p>Your Bulbasaur vs. Gary's Charmander</p>
-	<label for="attack">Choose an Attack: </label>
-	<ol>
-		<li><input id="attack" type="submit" value="Tackle"></li>
-	</ol>
-	<h2>Battle Log:</h2>
-	<ul id="battleLog">
-	</ul>
+	<div class="system">
+		<div class="screen-border">
+			<canvas id="easel" class="screen" width="320" height="280"></canvas>
+		</div>
+		<div class="controls">
+			<h1 class="system-name">Game System</h1>
+			<div class="d-pad">
+				<div id="d-up" class="button d up"></div>
+				<div id="d-right" class="button d right"></div>
+				<div id="d-down" class="button d down"></div>
+				<div id="d-left" class="button d left"></div>
+			</div>
+			<div class="control-buttons">
+				<div id="control-a" class="button control a"></div>
+				<div id="control-b" class="button control b"></div>
+			</div>
+			<div class="meta-buttons">
+				<div id="meta-start" class="button meta start"></div>
+				<div id="meta-select" class="button meta select"></div>
+			</div>
+		</div>
+	</div>
 	
 
 	<script src="_assets/scripts/createjs.min.js"></script>

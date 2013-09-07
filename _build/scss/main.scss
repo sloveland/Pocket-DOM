@@ -1,0 +1,139 @@
+// COLORS
+$system: #bcbdc2;
+$screen-border: #636c7b;
+
+body {
+	background: $system;
+	font-size: 16px;
+	@media screen and ( min-width: 220px ) {
+		font-size: 18px
+	}
+	@media screen and ( min-width: 240px ) {
+		font-size: 20px
+	}
+	@media screen and ( min-width: 260px ) {
+		font-size: 22px
+	}
+	@media screen and ( min-width: 280px ) {
+		font-size: 24px
+	}
+	@media screen and ( min-width: 300px ) {
+		font-size: 26px
+	}
+	@media screen and ( min-width: 320px ) {
+		font-size: 28px
+	}
+	@media screen and ( min-width: 340px ) {
+		font-size: 30px
+	}
+	@media screen and ( min-width: 360px ) {
+		font-size: 32px
+	}
+	@media screen and ( min-width: 380px ) {
+		font-size: 34px
+	}
+	@media screen and ( min-width: 400px ) {
+		font-size: 36px
+	}
+	@media screen and ( min-width: 420px ) {
+		font-size: 38px
+	}
+	@media screen and ( min-width: 440px ) {
+		font-size: 40px
+	}
+}
+.system {
+	float: left;
+	padding: 1em;
+}
+.screen-border {
+	background: $screen-border;
+	padding: .5em 1em;
+	border-radius: .25em .25em 1em .25em;
+}
+
+.screen {
+	background: #eee;
+	max-width: 100%;
+}
+.controls {
+	position: relative;
+}
+.button {
+	cursor: pointer;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.system-name {
+	color: #474881;
+	font-family: Verdana, sans-serif;
+	font-size: .4em;
+	padding-top: .5em;
+	padding-bottom: 2em;
+}
+.d-pad {
+	width: 3em;
+	height: 3em;
+	position: relative;
+}
+
+.d {
+	width: 1em;
+	height: 1em;
+	background: #1d2323;
+	position: absolute;
+}
+
+.up {
+	left: 1em;
+	top: 0;
+	border-radius: .25em .25em 0 0;
+}
+.right {
+	top: 1em;
+	right: 0;
+	border-radius: 0 .25em .25em 0;
+}
+.down {
+	left: 1em;
+	bottom: 0;
+	border-radius: 0 0 .25em .25em;
+}
+.left {
+	top: 1em;
+	left: 0;
+	border-radius: .25em 0 0 .25em;
+}
+
+.control-buttons {
+	position: absolute;
+	right: 0;
+	top: 2em;
+	background: #afb2b6;
+	border-radius: 2em;
+}
+.control {
+	background: #79215b;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 1.5em;
+	float: left;
+	margin: .25em;
+}
+
+.meta-buttons {
+	position: absolute;
+	background: #afb2b6;
+	top: 6em;
+	left: 2.5em;
+	border-radius: 2em;
+}
+
+.meta {
+	background: #717b85;
+	width: 1.8em;
+	height: .5em;
+	border-radius: .4em;
+	float: left;
+	margin: .25em;
+}
