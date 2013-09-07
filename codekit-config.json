@@ -2,26 +2,37 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8322",
   "files" : {
-    "\/battle.js" : {
+    "\/_build\/battle.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/battle.js",
+      "inputAbbreviatedPath" : "\/_build\/battle.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/battle-ck.js",
+      "outputAbbreviatedPath" : "\/_build\/battle-ck.js",
       "fileType" : 64
     },
-    "\/pokemon.js" : {
+    "\/_build\/canvas.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/pokemon.js",
+      "inputAbbreviatedPath" : "\/_build\/canvas.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/pokemon-ck.js",
+      "outputAbbreviatedPath" : "\/_build\/canvas-ck.js",
+      "fileType" : 64
+    },
+    "\/_build\/pokemon.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/pokemon.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
       "fileType" : 64
     },
     "\/index.html" : {
@@ -33,26 +44,37 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/lib.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/lib.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/lib-ck.js",
-      "fileType" : 64
-    },
-    "\/simplebattle.js" : {
+    "\/_build\/controller.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/simplebattle.js",
+      "inputAbbreviatedPath" : "\/_build\/controller.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/battle.js",
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
+      "fileType" : 64
+    },
+    "\/_assets\/scripts\/createjs-min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs-min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs-min-ck.js",
+      "fileType" : 64
+    },
+    "\/_build\/lib.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/lib.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/_build\/lib-ck.js",
       "fileType" : 64
     }
   },
@@ -60,15 +82,22 @@
     {
       "type" : 0,
       "position" : 0,
-      "linkedFileAbbreviatedPath" : "\/pokemon.js",
-      "baseFileAbbreviatedPath" : "\/simplebattle.js",
+      "linkedFileAbbreviatedPath" : "\/_build\/pokemon.js",
+      "baseFileAbbreviatedPath" : "\/_build\/controller.js",
       "followForSyntaxChecking" : 1
     },
     {
       "type" : 0,
       "position" : 1,
-      "linkedFileAbbreviatedPath" : "\/lib.js",
-      "baseFileAbbreviatedPath" : "\/simplebattle.js",
+      "linkedFileAbbreviatedPath" : "\/_build\/lib.js",
+      "baseFileAbbreviatedPath" : "\/_build\/controller.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/_build\/canvas.js",
+      "baseFileAbbreviatedPath" : "\/_build\/controller.js",
       "followForSyntaxChecking" : 1
     }
   ],
