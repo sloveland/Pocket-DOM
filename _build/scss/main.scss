@@ -1,9 +1,20 @@
 // COLORS
 $system: #bcbdc2;
 $screen-border: #636c7b;
+$screen: #eee;
+$label: #474881;
+$d-pad: #1d2323;
+$button-group: #afb2b6;
+$control-buttons: #79215b;
+$meta-buttons: #717b85;
+
+* {
+	box-sizing: border-box;
+}
 
 body {
 	background: $system;
+	font-family: Verdana, Arial, sans-serif;
 	font-size: 16px;
 	@media screen and ( min-width: 220px ) {
 		font-size: 18px
@@ -53,7 +64,7 @@ body {
 }
 
 .screen {
-	background: #eee;
+	background: $screen;
 	max-width: 100%;
 }
 .controls {
@@ -61,11 +72,18 @@ body {
 }
 .button {
 	cursor: pointer;
-	box-shadow: 1px 1px 3px #000;
+	box-shadow: 0 0 3px 1px #555;
+	color: $label;
+	text-align: center;
+	.label {
+		font-size: .4em;
+		position: relative;
+		text-transform: uppercase;
+	}
 }
 
 .system-name {
-	color: #474881;
+	color: $label;
 	font-family: Verdana, sans-serif;
 	font-size: .4em;
 	padding-top: .5em;
@@ -80,60 +98,86 @@ body {
 .d {
 	width: 1em;
 	height: 1em;
-	background: #1d2323;
+	background: $d-pad;
 	position: absolute;
+	border-top: .05em solid lighten($d-pad, 40%);
+	border-bottom: .05em solid darken($d-pad, 20%);
 }
 
 .up {
 	left: 1em;
 	top: 0;
 	border-radius: .25em .25em 0 0;
+	.label {
+		top: -3em;
+	}
 }
 .right {
 	top: 1em;
 	right: 0;
 	border-radius: 0 .25em .25em 0;
+	.label {
+		top: -1em;
+		right: -2em;
+	}
 }
 .down {
 	left: 1em;
 	bottom: 0;
 	border-radius: 0 0 .25em .25em;
+	.label {
+		bottom: -1em;
+	}
 }
 .left {
 	top: 1em;
 	left: 0;
 	border-radius: .25em 0 0 .25em;
+	.label {
+		top: -1em;
+		left: -2em;
+	}
 }
 
 .control-buttons {
 	position: absolute;
 	right: 0;
 	top: 2em;
-	background: #afb2b6;
+	background: $button-group;
 	border-radius: 2em;
 }
 .control {
-	background: #79215b;
+	background: $control-buttons;
 	width: 1.5em;
 	height: 1.5em;
 	border-radius: 1.5em;
-	float: left;
+	float: right;
 	margin: .25em;
+	border-top: .05em solid lighten($control-buttons, 40%);
+	border-bottom: .05em solid darken($control-buttons, 20%);
+	.label {
+		bottom: -3em;
+	}
 }
 
 .meta-buttons {
 	position: absolute;
-	background: #afb2b6;
+	background: $button-group;
 	top: 6em;
 	left: 2.5em;
 	border-radius: 2em;
 }
 
 .meta {
-	background: #717b85;
+	background: $meta-buttons;
 	width: 1.8em;
 	height: .5em;
 	border-radius: .4em;
 	float: left;
 	margin: .25em;
+	border-top: .05em solid lighten($meta-buttons, 10%);
+	border-bottom: .05em solid darken($meta-buttons, 10%);
+	.label {
+		bottom: -.6em;
+	}
 }
