@@ -272,11 +272,12 @@ d=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u20
 
 // Game Namespace
 var Game = Game || {
+	currentMenu: 0,
 	currentScene: {},
 	currentPhase: 0,
-	screen: {},
+	cursor: {},
+	menus: [],
 	scenes: [],
-	fps: 30,
 	addScene: function(scene) {
 		Game.scenes.push(scene);
 	},
@@ -285,6 +286,16 @@ var Game = Game || {
 	},
 	run: function() {
 
+	}
+};
+
+// Menu Class
+Game.Menu = function() {
+	this.grid = [];
+};
+Game.Menu.prototype = {
+	setGrid: function() {
+		this.grid = [];
 	}
 };
 
@@ -367,6 +378,26 @@ phase01.onStart = function() {
 intro.addPhase(phase01);
 Game.addScene(intro);
 
+// Cursor
+Game.cursor = {
+	x: 0,
+	y: 0,
+	getLocation: function() {
+		return [this.x, this.y];
+	},
+	moveUp: function() {
+		this.y - 1;
+	},
+	moveRight: function() {
+		this.x + 1;
+	},
+	moveDown: function() {
+		this.y + 1;
+	},
+	moveLeft: function() {
+		this.x - 1;
+	}
+};
 
 
 // Game Controls
@@ -478,24 +509,28 @@ window.addEventListener('keydown', function(event) {
 		break;
 
 		// Up
+		case 104: // Numpad 8
 		case 38: // Up Arrow
 		case 87: // W
 			Game.controls.up();
 		break;
 
 		// Right
+		case 102: // Numpad 6
 		case 39: // Right Arrow
 		case 68: // D
 			Game.controls.right();
 		break;
 
 		// Down
+		case 98: // Numpad 2
 		case 40: // Down Arrow
 		case 83: // S
 			Game.controls.down();
 		break;
 
 		// Left
+		case 100: // Numpad 4
 		case 37: // Left Arrow
 		case 65: // A
 			Game.controls.left();
