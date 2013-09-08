@@ -2,25 +2,56 @@
 
 // Game Namespace
 var Game = Game || {
+	currentScene: {},
+	currentPhase: 0,
 	screen: {},
 	scene: {},
 	controls: {},
 	fps: 30,
+	showPrompt: function() {
+		console.log(Game.currentScene.phases[Game.currentPhase].prompt);
+	},
 	run: function() {
 
 	}
 };
 
+Game.scene = {
+	intro: {
+		phases: [
+			{
+				prompt: "Press Start",
+				onStart: function() {
+					console.log("On to the New Game Menu!");
+					Game.currentPhase = 1;
+					Game.showPrompt();
+				}
+			},
+			{
+				prompt: "New Game",
+				onChoose: function() {
+					console.log("On to meet Professor Oak!");
+				}
+			}
+		],
+		start: function() {
+			Game.currentScene = this;
+			console.log(Game.currentScene.phases[Game.currentPhase].prompt);
+		}
+	},
+	battle: {}
+};
+
 // Game Controls
 Game.controls = {
 	choose: function() {
-		console.log("Choose");
+		Game.currentScene.phases[Game.currentPhase].onChoose();
 	},
 	cancel: function() {
 		console.log("Cancel");
 	},
 	start: function() {
-		console.log("Start");
+		Game.currentScene.phases[Game.currentPhase].onStart();
 	},
 	select: function() {
 		console.log("Select");
@@ -37,11 +68,6 @@ Game.controls = {
 	left: function() {
 		console.log("Left");
 	}
-};
-
-
-document.body.onload = function () {
-	connectButtons();
 };
 
 // GUI Controls
@@ -148,3 +174,9 @@ window.addEventListener('keydown', function(event) {
 			Game.controls.left();
 	}
 }, false);
+
+
+document.body.onload = function () {
+	connectButtons();
+	Game.scene.intro.start();
+};
