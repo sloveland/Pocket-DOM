@@ -273,35 +273,41 @@ d=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u20
 // Game Namespace
 var Game = Game || {
 	screen: {},
+	scene: {},
 	controls: {},
-	scene: {}
-}
+	fps: 30,
+	run: function() {
+
+	}
+};
 
 // Game Controls
-Game.controls.choose = function() {
-	console.log("Choose");
-}
-Game.controls.cancel = function() {
-	console.log("Cancel");
-}
-Game.controls.start = function() {
-	console.log("Start");
-}
-Game.controls.select = function() {
-	console.log("Select");
-}
-Game.controls.up = function() {
-	console.log("Up");
-}
-Game.controls.right = function() {
-	console.log("Right");
-}
-Game.controls.down = function() {
-	console.log("Down");
-}
-Game.controls.left = function() {
-	console.log("Left");
-}
+Game.controls = {
+	choose: function() {
+		console.log("Choose");
+	},
+	cancel: function() {
+		console.log("Cancel");
+	},
+	start: function() {
+		console.log("Start");
+	},
+	select: function() {
+		console.log("Select");
+	},
+	up: function() {
+		console.log("Up");
+	},
+	right: function() {
+		console.log("Right");
+	},
+	down: function() {
+		console.log("Down");
+	},
+	left: function() {
+		console.log("Left");
+	}
+};
 
 
 document.body.onload = function () {

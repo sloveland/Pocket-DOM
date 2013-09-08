@@ -65,8 +65,10 @@ body {
   box-shadow: 0 0 3px 1px #555;
   color: #474881;
   text-align: center; }
-  .button:hover, .button:active {
+  .button:hover {
     box-shadow: 0 0 5px 1px #333; }
+  .button:active {
+    box-shadow: 0 0 5px 1px #333 inset; }
   .button .label {
     font-size: .4em;
     position: relative;

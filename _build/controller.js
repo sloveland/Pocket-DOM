@@ -3,35 +3,41 @@
 // Game Namespace
 var Game = Game || {
 	screen: {},
+	scene: {},
 	controls: {},
-	scene: {}
-}
+	fps: 30,
+	run: function() {
+
+	}
+};
 
 // Game Controls
-Game.controls.choose = function() {
-	console.log("Choose");
-}
-Game.controls.cancel = function() {
-	console.log("Cancel");
-}
-Game.controls.start = function() {
-	console.log("Start");
-}
-Game.controls.select = function() {
-	console.log("Select");
-}
-Game.controls.up = function() {
-	console.log("Up");
-}
-Game.controls.right = function() {
-	console.log("Right");
-}
-Game.controls.down = function() {
-	console.log("Down");
-}
-Game.controls.left = function() {
-	console.log("Left");
-}
+Game.controls = {
+	choose: function() {
+		console.log("Choose");
+	},
+	cancel: function() {
+		console.log("Cancel");
+	},
+	start: function() {
+		console.log("Start");
+	},
+	select: function() {
+		console.log("Select");
+	},
+	up: function() {
+		console.log("Up");
+	},
+	right: function() {
+		console.log("Right");
+	},
+	down: function() {
+		console.log("Down");
+	},
+	left: function() {
+		console.log("Left");
+	}
+};
 
 
 document.body.onload = function () {
