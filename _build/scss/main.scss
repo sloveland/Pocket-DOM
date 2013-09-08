@@ -65,7 +65,7 @@ body {
 .system {
 	float: left;
 	padding: 1em;
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 }
 .screen-border {
 	background: $screen-border;
@@ -80,6 +80,7 @@ body {
 }
 .controls {
 	position: relative;
+	padding-bottom: 3em;
 }
 .button {
 	cursor: pointer;
@@ -213,5 +214,10 @@ body {
 	font-style: italic;
 }
 .control-key {
+	padding: 1.6em;
 	font-size: .4em;
+	float: left;
+	ul {
+		padding-left: 2em;
+	}
 }

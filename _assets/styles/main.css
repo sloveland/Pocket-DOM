@@ -45,7 +45,7 @@ body {
 .system {
   float: left;
   padding: 1em;
-  padding-bottom: 4em; }
+  padding-bottom: 2em; }
 
 .screen-border {
   background: #636c7b;
@@ -58,7 +58,8 @@ body {
   max-width: 100%; }
 
 .controls {
-  position: relative; }
+  position: relative;
+  padding-bottom: 3em; }
 
 .button {
   cursor: pointer;
@@ -174,4 +175,8 @@ body {
   font-style: italic; }
 
 .control-key {
-  font-size: .4em; }
+  padding: 1.6em;
+  font-size: .4em;
+  float: left; }
+  .control-key ul {
+    padding-left: 2em; }
