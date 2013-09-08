@@ -177,6 +177,8 @@ body {
 .control-key {
   padding: 1.6em;
   font-size: .4em;
-  float: left; }
+  float: left;
+  border: 1px solid #474881;
+  color: #474881; }
   .control-key ul {
     padding-left: 2em; }

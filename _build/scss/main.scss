@@ -217,6 +217,8 @@ body {
 	padding: 1.6em;
 	font-size: .4em;
 	float: left;
+	border: 1px solid $label;
+	color: $label;
 	ul {
 		padding-left: 2em;
 	}

@@ -1,18 +1,27 @@
 // Game Namespace
 var Game = Game || {
 	currentMenu: 0,
-	currentScene: {},
+	currentScene: 0,
 	currentPhase: 0,
-	cursor: {},
 	menus: [],
 	scenes: [],
 	addScene: function(scene) {
 		Game.scenes.push(scene);
 	},
-	showPrompt: function() {
-		console.log(Game.currentScene.phases[Game.currentPhase].prompt);
-	},
-	run: function() {
-
+	runScene: function() {
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].start();
 	}
 };
+
+// CLASSES
+
+// Scene: A collection of Phases, like a book of "pages"
+// Phase: Manage what is displayed and what input to expect
+//
+// Map: A grid that manages graphics, player movement/location, 
+//   and player-interactive events
+// Menu: A grid that manages options, cursor movement/location, 
+//   and cursor-interactive events
+//
+// Event: Interactive objects which are located in a location 
+//   on a Map or Menu grid.

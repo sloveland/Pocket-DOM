@@ -1,28 +1,28 @@
 // Game Controls
 Game.controls = {
 	choose: function() {
-		Game.currentScene.phases[Game.currentPhase].onChoose();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onChoose();
 	},
 	cancel: function() {
-		Game.currentScene.phases[Game.currentPhase].onCancel();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onCancel();
 	},
 	start: function() {
-		Game.currentScene.phases[Game.currentPhase].onStart();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onStart();
 	},
 	select: function() {
-		Game.currentScene.phases[Game.currentPhase].onSelect();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onSelect();
 	},
 	up: function() {
-		Game.currentScene.phases[Game.currentPhase].onUp();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onUp();
 	},
 	right: function() {
-		Game.currentScene.phases[Game.currentPhase].onRight();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onRight();
 	},
 	down: function() {
-		Game.currentScene.phases[Game.currentPhase].onDown();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onDown();
 	},
 	left: function() {
-		Game.currentScene.phases[Game.currentPhase].onLeft();
+		Game.scenes[Game.currentScene].phases[Game.currentPhase].onLeft();
 	}
 };
 
