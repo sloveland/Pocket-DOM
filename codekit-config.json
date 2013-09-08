@@ -67,17 +67,6 @@
       "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
       "fileType" : 64
     },
-    "\/_assets\/scripts\/createjs.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
-      "fileType" : 64
-    },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -87,26 +76,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_build\/controller.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/_build\/controller.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
-      "fileType" : 64
-    },
-    "\/_build\/lib.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/_assets\/scripts\/createjs.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/lib.js",
+      "inputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/lib-ck.js",
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
       "fileType" : 64
     },
     "\/_assets\/images\/pokemon_logo.png" : {
@@ -119,6 +97,28 @@
       "outputAbbreviatedPath" : "\/_assets\/images\/pokemon_logo.png",
       "initialSize" : 36640,
       "fileType" : 8192
+    },
+    "\/_build\/lib.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/lib.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_build\/lib-ck.js",
+      "fileType" : 64
+    },
+    "\/_build\/controller.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_build\/controller.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
+      "fileType" : 64
     }
   },
   "manualImportLinks" : [
