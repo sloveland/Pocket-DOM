@@ -111,6 +111,15 @@
       "outputAbbreviatedPath" : "\/_build\/game\/game-ck.js",
       "fileType" : 64
     },
+    "\/_assets\/styles\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_assets\/styles\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/_build\/init.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -121,15 +130,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
       "fileType" : 64
-    },
-    "\/_assets\/styles\/main.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_assets\/styles\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/_build\/game\/lib.js" : {
       "ignoreWasSetByUser" : 1,
