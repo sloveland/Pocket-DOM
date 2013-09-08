@@ -360,7 +360,10 @@ options = ["New Game", "Continue"];
 phase01.addOptions(options);
 phase01.start = function() {
 	this.showOptions();
-}
+};
+phase01.onStart = function() {
+	console.log("Off to meet Professor Oak!");
+};
 intro.addPhase(phase01);
 Game.addScene(intro);
 

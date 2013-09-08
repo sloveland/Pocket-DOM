@@ -56,6 +56,15 @@
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main-ck.js",
       "fileType" : 64
     },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_build\/pokemon.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -66,15 +75,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/pokemon-ck.js",
       "fileType" : 64
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_assets\/scripts\/createjs.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -87,17 +87,6 @@
       "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
       "fileType" : 64
     },
-    "\/_build\/controller.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/_build\/controller.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
-      "fileType" : 64
-    },
     "\/_assets\/images\/pokemon_logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -108,6 +97,17 @@
       "outputAbbreviatedPath" : "\/_assets\/images\/pokemon_logo.png",
       "initialSize" : 36640,
       "fileType" : 8192
+    },
+    "\/_build\/controller.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_build\/controller.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
+      "fileType" : 64
     },
     "\/_build\/lib.js" : {
       "ignoreWasSetByUser" : 0,
