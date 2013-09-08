@@ -87,6 +87,17 @@
       "outputAbbreviatedPath" : "\/_assets\/scripts\/createjs.min-ck.js",
       "fileType" : 64
     },
+    "\/_build\/controller.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_build\/controller.js",
+      "outputStyle" : 0,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
+      "fileType" : 64
+    },
     "\/_assets\/images\/pokemon_logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -107,17 +118,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/lib-ck.js",
-      "fileType" : 64
-    },
-    "\/_build\/controller.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/_build\/controller.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
       "fileType" : 64
     }
   },

@@ -5,8 +5,11 @@ var Game = Game || {
 	currentScene: {},
 	currentPhase: 0,
 	screen: {},
-	scenes: {},
+	scenes: [],
 	fps: 30,
+	addScene: function(scene) {
+		Game.scenes.push(scene);
+	},
 	showPrompt: function() {
 		console.log(Game.currentScene.phases[Game.currentPhase].prompt);
 	},
@@ -15,57 +18,35 @@ var Game = Game || {
 	}
 };
 
-// Game.scene = {
-// 	intro: {
-// 		phases: [
-// 			{
-// 				prompt: "Press Start",
-// 				onStart: function() {
-// 					console.log("On to the New Game Menu!");
-// 					Game.currentPhase = 1;
-// 					Game.showPrompt();
-// 				}
-// 			},
-// 			{
-// 				prompt: "New Game",
-// 				onChoose: function() {
-// 					console.log("On to meet Professor Oak!");
-// 				}
-// 			}
-// 		],
-// 		start: function() {
-// 			Game.currentScene = this;
-// 			console.log(Game.currentScene.phases[Game.currentPhase].prompt);
-// 		}
-// 	},
-// 	battle: {}
-// };
-
 // Scene Class
-Game.Scene = function(name, options) {
-	this.name = name;
-	this.options = options;
+Game.Scene = function() {
 	this.phases = [];
 };
-
 Game.Scene.prototype = {
 	start: function() {
 		Game.currentScene = this;
+		Game.currentPhase = 0;
+		this.phases[Game.currentPhase].start();
 	},
-	showOptions: function() {
-		len = this.options.length;
-		for (i = 0; i < len; i++) {
-			console.log(this.options[i]);
-		}
+	addPhase: function(phase) {
+		this.phases.push(phase);
 	}
 };
 
-
 // Phase Class
-Game.Phase = function(name) {
-	this.name = name;
+Game.Phase = function() {
+	this.options = [];
 };
 Game.Phase.prototype = {
+	addOptions: function(options) {
+		var len = options.length;
+		for (i = 0; i < len; i++) {
+			this.options.push(options[i]);
+		}
+	},
+	nextPhase: function(phase) {
+		Game.currentPhase = phase;
+	},
 	onChoose: function() {
 		console.log("Choose");
 	},
@@ -89,16 +70,30 @@ Game.Phase.prototype = {
 	},
 	onLeft: function() {
 		console.log("Left");
+	},
+	showOptions: function() {
+		var len = this.options.length;
+		for (i = 0; i < len; i++) {
+			console.log(this.options[i]);
+		}
+	},
+	start: function() {
+		console.log("phase Started");
 	}
 };
 
 
-// Intro Scene Instance
-Game.scenes.intro = new Game.Scene("intro", ["New Game", "Continue"]);
+// Intro Scene
+var intro = new Game.Scene(),
+phase01 = new Game.Phase();
+options = ["New Game", "Continue"];
+phase01.addOptions(options);
+phase01.start = function() {
+	this.showOptions();
+}
+intro.addPhase(phase01);
+Game.addScene(intro);
 
-// Phase 01 Instance
-splash = new Game.Phase("splash");
-Game.scenes.intro.phases.push(splash);
 
 
 // Game Controls
@@ -234,8 +229,43 @@ window.addEventListener('keydown', function(event) {
 	}
 }, false);
 
+// Starting Scene
+function startGame() {
+	Game.scenes[0].start();
+}
 // Initiate
 document.body.onload = function () {
 	connectButtons();
-	Game.scenes.intro.start();
+	startGame();
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
