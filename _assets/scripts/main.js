@@ -575,7 +575,7 @@ Game.Map = function(name, x, y) {
 		map.grid.push(row);
 	}
 	return this;
-}
+};
 
 Game.Map.prototype = {
 	findMap: function(mapname) {
@@ -589,7 +589,8 @@ Game.Map.prototype = {
 
 	},
 	makeWalkable: function(name, cells) { // name of map and array of cell coordinates
-		var map = findMap(name);
+		var map = this;
+		console.log(map);
 		// Loop through cells
 		for (i = 0, len = cells.length; i < len; i++) {
 			// Loop through map.grid
@@ -671,8 +672,10 @@ Game.init = function() {
 	// Create a Map
 
 	fightMenu = new Game.Map("fightMenu", 2, 2);
+	console.log(fightMenu);
 	walkable = [[1,1],[0,1],[1,0]];
-	// makeWalkable('fightMenu', walkable);
+	// fightMenu.makeWalkable('fightMenu', walkable);
+	Game.addMap(fightMenu);
 	// console.log(findMap('fightMenu'));
 };
 

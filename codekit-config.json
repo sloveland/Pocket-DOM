@@ -24,15 +24,15 @@
       "outputAbbreviatedPath" : "\/_build\/game\/controls-ck.js",
       "fileType" : 64
     },
-    "\/_build\/util\/array_compare.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/_build\/init.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/util\/array_compare.js",
-      "outputStyle" : 1,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_build\/init.js",
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/util\/array_compare-ck.js",
+      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
       "fileType" : 64
     },
     "\/_assets\/scripts\/jquery.min.js" : {
@@ -55,15 +55,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_build\/game\/classes\/phase.js" : {
+    "\/_build\/util\/array_compare.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/game\/classes\/phase.js",
+      "inputAbbreviatedPath" : "\/_build\/util\/array_compare.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/game\/classes\/phase-ck.js",
+      "outputAbbreviatedPath" : "\/_build\/util\/array_compare-ck.js",
       "fileType" : 64
     },
     "\/_assets\/images\/pokemon_logo.png" : {
@@ -133,17 +133,6 @@
       "outputAbbreviatedPath" : "\/_build\/game\/game-ck.js",
       "fileType" : 64
     },
-    "\/_build\/init.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/_build\/init.js",
-      "outputStyle" : 0,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/scripts\/main.js",
-      "fileType" : 64
-    },
     "\/_assets\/styles\/main.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -152,6 +141,17 @@
       "inputAbbreviatedPath" : "\/_assets\/styles\/main.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/_build\/game\/lib.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/game\/lib.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_build\/game\/lib-ck.js",
+      "fileType" : 64
     },
     "\/_build\/game\/classes\/scene.js" : {
       "ignoreWasSetByUser" : 1,
@@ -164,15 +164,15 @@
       "outputAbbreviatedPath" : "\/_build\/game\/classes\/scene-ck.js",
       "fileType" : 64
     },
-    "\/_build\/game\/lib.js" : {
+    "\/_build\/game\/classes\/phase.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/game\/lib.js",
+      "inputAbbreviatedPath" : "\/_build\/game\/classes\/phase.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/game\/lib-ck.js",
+      "outputAbbreviatedPath" : "\/_build\/game\/classes\/phase-ck.js",
       "fileType" : 64
     }
   },
