@@ -1,8 +1,10 @@
 // Game Namespace
 var Game = Game || {
+	currentMap: "",
 	currentMenu: 0,
 	currentScene: 0,
 	currentPhase: 0,
+	maps: [],
 	menus: [],
 	scenes: [],
 	addScene: function(scene) {

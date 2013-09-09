@@ -270,9 +270,11 @@ d=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u20
 
 // Game Namespace
 var Game = Game || {
+	currentMap: "",
 	currentMenu: 0,
 	currentScene: 0,
 	currentPhase: 0,
+	maps: [],
 	menus: [],
 	scenes: [],
 	addScene: function(scene) {
@@ -575,6 +577,37 @@ Game.init = function() {
 	Game.addScene(intro);
 };
 
+function createMap(name, x, y) {
+	map = {
+		name: name,
+		grid: []
+	};
+	// use loop to create grid from x, y
+	for (i = 0; i < x; i++) {
+		row = [];
+		for (ix = 0; ix < y; ix++) {
+			cell = { value: "(" + i + ", " + ix + ")", isWalkable: false };
+			row.push(cell);
+		}
+		map.grid.push(row);
+	}
+	Game.maps.push(map);
+}
+function findMap(mapname) {
+	for (i = 0, len = Game.maps.length; i < len; i++) {
+		if (Game.maps[i].name == mapname) {
+			return Game.maps[i];
+		}
+	}
+}
+function makeWalkable(name, cells) { // name of map and array of cell coordinates
+	map = findMap(name);
+	return map.name;
+
+}
+function placeEvent(event, map, x, y) {
+
+}
 
 
 
@@ -583,5 +616,9 @@ document.body.onload = function () {
 	Game.controls.connectButtons();
 	Game.init();
 	Game.runScene();
+	createMap("fightMenu", 2, 2);
+
+	// Find Map
+	
 };
 
