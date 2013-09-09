@@ -2,6 +2,33 @@
 // imports game/game.js
 // imports game/controls.js
 
+
+
+// Array Compare Method
+Array.prototype.compare = function (array) {
+    // if the other array is a falsy value, return
+    if (!array)
+        return false;
+
+    // compare lengths - can save a lot of time
+    if (this.length != array.length)
+        return false;
+
+    for (var i = 0; i < this.length; i++) {
+        // Check if we have nested arrays
+        if (this[i] instanceof Array && array[i] instanceof Array) {
+            // recurse into the nested arrays
+            if (!this[i].compare(array[i]))
+                return false;
+        }
+        else if (this[i] != array[i]) {
+            // Warning - two different object instances will never be equal: {x:20} != {x:20}
+            return false;
+        }
+    }
+    return true;
+}
+
 // Menu Class
 Game.Menu = function() {
 	this.grid = [];
@@ -142,7 +169,7 @@ function createMap(name, x, y) {
 	for (i = 0; i < x; i++) {
 		row = [];
 		for (ix = 0; ix < y; ix++) {
-			cell = { value: "(" + i + ", " + ix + ")", isWalkable: false };
+			cell = { value: [i, ix], walkable: false };
 			row.push(cell);
 		}
 		map.grid.push(row);
@@ -157,14 +184,31 @@ function findMap(mapname) {
 	}
 }
 function makeWalkable(name, cells) { // name of map and array of cell coordinates
-	map = findMap(name);
-	return map.name;
+	var map = findMap(name);
+	// Loop through cells
+	for (i = 0, len = cells.length; i < len; i++) {
+		// Loop through map.grid
+		for (ib = 0, lenb = map.grid.length; ib < lenb; ib++) {
+			// Loop through grid columns
+			for (ic = 0, lenc = map.grid[ib].length; ic < lenc; ic++) {
 
+				// Check match
+				if ((cells[i]).compare(map.grid[ib][ic].value)) {
+					// Make walkable
+					thisCell = map.grid[ib][ic];
+					thisCell.walkable = true;
+				}
+			}
+		}
+	}
 }
 function placeEvent(event, map, x, y) {
 
 }
 
+if ([1,1].compare([1,1])) {
+	console.log("Match found");
+}
 
 
 // Initiate
@@ -174,7 +218,8 @@ document.body.onload = function () {
 	Game.runScene();
 	createMap("fightMenu", 2, 2);
 
-	// Find Map
-	
+	walkable = [[1,1],[0,1]];
+	makeWalkable('fightMenu', walkable);
+	console.log(findMap('fightMenu'));
 };
 
