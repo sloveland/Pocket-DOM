@@ -7,6 +7,9 @@ var Game = Game || {
 	maps: [],
 	menus: [],
 	scenes: [],
+	addMap: function(map) {
+		Game.maps.push(map);
+	},
 	addScene: function(scene) {
 		Game.scenes.push(scene);
 	},
