@@ -101,6 +101,7 @@ Game.init = function() {
 	};
 	phase01.onStart = function() {
 		Game.currentPhase = 1;
+		gameMenu();
 		Game.runScene();
 	};
 	intro.addPhase(phase01);
@@ -135,5 +136,7 @@ document.body.onload = function () {
 	Game.controls.connectButtons();
 	Game.init();
 	Game.runScene();
+	startScreen();
+	
 };
 
