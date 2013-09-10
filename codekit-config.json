@@ -24,17 +24,6 @@
       "initialSize" : 21917,
       "fileType" : 8192
     },
-    "\/_build\/util\/array_compare.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/util\/array_compare.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/util\/array_compare-ck.js",
-      "fileType" : 64
-    },
     "\/_build\/game\/controls.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -66,6 +55,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/_build\/util\/array_compare.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/util\/array_compare.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_build\/util\/array_compare-ck.js",
+      "fileType" : 64
+    },
     "\/_build\/init.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -88,17 +88,16 @@
       "initialSize" : 12337,
       "fileType" : 8192
     },
-    "\/_build\/scss\/main.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/_build\/game\/pokemon.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/_build\/scss\/main.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/_assets\/styles\/main.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_build\/game\/pokemon.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_build\/game\/pokemon-ck.js",
+      "fileType" : 64
     },
     "\/_assets\/scripts\/main.js" : {
       "ignoreWasSetByUser" : 0,
@@ -111,16 +110,17 @@
       "outputAbbreviatedPath" : "\/_assets\/scripts\/main-ck.js",
       "fileType" : 64
     },
-    "\/_build\/game\/pokemon.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/_build\/scss\/main.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_build\/game\/pokemon.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_build\/game\/pokemon-ck.js",
-      "fileType" : 64
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_build\/scss\/main.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/_assets\/styles\/main.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/_build\/game\/canvas.js" : {
       "ignoreWasSetByUser" : 1,
@@ -132,15 +132,6 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/game\/canvas-ck.js",
       "fileType" : 64
-    },
-    "\/_assets\/styles\/main.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_assets\/styles\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/_build\/game\/game.js" : {
       "ignoreWasSetByUser" : 1,
@@ -163,6 +154,15 @@
       "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/_build\/game\/lib-ck.js",
       "fileType" : 64
+    },
+    "\/_assets\/styles\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_assets\/styles\/main.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/_build\/game\/classes\/scene.js" : {
       "ignoreWasSetByUser" : 1,
