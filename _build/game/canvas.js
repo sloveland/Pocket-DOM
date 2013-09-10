@@ -55,6 +55,7 @@ function gameMenu() {
   stage = new createjs.Stage(canvas),
   centerX = canvas.width/2,
   centerY = canvas.height/2,
+  cursor = new createjs.Text("▶", "26px Verdana", "#000000"),
   option1 = new createjs.Text("NEW GAME", "32px Verdana", "#000000"),
   option2 = new createjs.Text("CONTINUE", "32px Verdana", "#000000"),
   option3 = new createjs.Text("OPTIONS", "32px Verdana", "#000000"),
@@ -62,15 +63,18 @@ function gameMenu() {
 
   box.graphics.setStrokeStyle(5).beginStroke("#000000").drawRoundRect(10, 10, centerX, (3 * 40 + 20), 10);
 
-  option1.x = 40;
-  option2.x = 40;
-  option3.x = 40;
+  cursor.x = 20;
+  cursor.y = 24;
+
+  option1.x = 50;
+  option2.x = 50;
+  option3.x = 50;
 
   option1.y = 20;
   option2.y = 60;
   option3.y = 100;
 
-  stage.addChild(box, option1, option2, option3);
+  stage.addChild(box, cursor, option1, option2, option3);
   createjs.Ticker.addEventListener("tick", function() {
     stage.update();
   });
